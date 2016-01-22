@@ -1,0 +1,34 @@
+{
+  "resources": {
+    "body": [
+      {
+        "type": "script",
+        "src": "./embed.js"
+      }
+    ]
+  },
+  "preview": {
+    "handlers": [
+      {
+        "options": ["*"],
+        "execute": "INSTALL_SCOPE.setOptions(INSTALL_OPTIONS)"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "user": {
+        "order": 1,
+        "type": "string",
+        "title": "Product Hunt Username",
+        "default": "zackbloom"
+      },
+      "element": {
+        "order": 2,
+        "type": "object",
+        "format": "element",
+        "title": "Location"
+      }
+    }
+  }
+}
